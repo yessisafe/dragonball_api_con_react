@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
+import {Dragon} from '../Dragon/Dragon';
 import axios from 'axios';
 
 
@@ -25,7 +26,8 @@ const List = () => {
     <ul className="App">
       {
         personajes.map(personaje =>{
-          return <li key={personaje.id}><img src={personaje.imageUrl}/> {personaje.name}</li>
+          return <Dragon id={personaje.id} src={personaje.imageUrl} name={personaje.name}></Dragon>
+          //return <li key={personaje.id}><img src={personaje.imageUrl}/> {personaje.name}</li>
         })
       }
     </ul>
