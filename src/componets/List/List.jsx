@@ -3,6 +3,7 @@ import {Dragon} from '../Dragon/Dragon';
 import axios from 'axios';
 
 
+
 const List = () => {
   const [personajes, setPersonajes] = useState([]);
 
@@ -13,7 +14,7 @@ const List = () => {
          /*La llamada es correcta */
          const persoData = response.data;
          setPersonajes(persoData);
-        console.log(personajes);
+        //console.log(personajes);
       })
       .catch(error => {
         /*Marca un error en la llamada */
@@ -23,14 +24,15 @@ const List = () => {
   }, []);
 
   return (
-    <ul className="App">
+    <div className="App container row col">
+      
       {
         personajes.map(personaje =>{
-          return <Dragon id={personaje.id} src={personaje.imageUrl} name={personaje.name}></Dragon>
+          return <Dragon id={personaje.id} key={personaje.id} src={personaje.imageUrl} name={personaje.name}></Dragon>
           //return <li key={personaje.id}><img src={personaje.imageUrl}/> {personaje.name}</li>
         })
       }
-    </ul>
+    </div>
   )
 }
 
