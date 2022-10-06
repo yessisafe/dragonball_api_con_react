@@ -6,7 +6,7 @@ import "../../styles.scss";
 const Dragon = ({ id, name, src, specie, role }) => {
   //return <li key={id}><img src={src}/> {name}</li>
   return (
-    <div className="col-3">
+    <div className="col-3" >
       <Card key={id}>
         <Card.Img variant="top" className="imagen-personaje" src={src} />
         <Card.Body>
@@ -23,7 +23,7 @@ const Dragon = ({ id, name, src, specie, role }) => {
               </p>
             </div>
           </Card.Text>
-          <Button variant="primary">More</Button>
+          <Button className="azul" variant="primary">More</Button>
         </Card.Body>
       </Card>
     </div>

@@ -7,13 +7,16 @@
 
 body{
     margin: auto;
-    background-color: green;
+    background-image: url(../src/img/goku.jpg);
+    background-color: rgba(60, 60, 60, 0.6);
 }
 
 .navbar{
     height: 75px;
     margin-bottom: 2rem;
     .container{
+        display: flex;
+        flex-direction: row;
         .input {
             margin: 2rem 0rem;
             padding: 10px 20px;
@@ -21,6 +24,7 @@ body{
             font-size: 20px;
             border-radius: 9px;
             border: none;
+            justify-content: flex-end;
         }
     }
 }
@@ -31,6 +35,11 @@ body{
         .card-body{
             .card-title{
                 text-align: center;
+            }
+            .card-text{
+                .azul{
+                    text-align: center;
+                }
             }
         }
         .card-img-top{
