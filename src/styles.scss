@@ -25,27 +25,39 @@ body{
             border-radius: 9px;
             border: none;
             justify-content: flex-end;
+
+            &:focus {
+                border: none;
+            }
+            &:active {
+                border: none;
+            }
         }
     }
 }
 
 .App{
-    .card{
-        margin-bottom: 2rem;
-        .card-body{
-            .card-title{
-                text-align: center;
-            }
-            .card-text{
-                .azul{
-                    text-align: center;
+    .row{
+        .col-3{
+            .card{
+                margin-bottom: 2rem;
+                .card-body{
+                    .card-title{
+                        text-align: center;
+                    }
+                    .card-text{
+                        .azul{
+                            text-align: center;
+                        }
+                    }
                 }
+                .card-img-top{
+                    height: 330px;
+                    object-fit: contain;
+                } 
             }
         }
-        .card-img-top{
-            height: 330px;
-            object-fit: contain;
-        } 
     }
+    
 }
 

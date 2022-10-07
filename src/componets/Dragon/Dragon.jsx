@@ -6,24 +6,22 @@ import "../../styles.scss";
 const Dragon = ({ id, name, src, specie, role }) => {
   //return <li key={id}><img src={src}/> {name}</li>
   return (
-    <div className="col-3" >
+    <div className="col-3">
       <Card key={id}>
         <Card.Img variant="top" className="imagen-personaje" src={src} />
         <Card.Body>
           <Card.Title>{name} </Card.Title>
           <Card.Text>
             <div>
-              <p>
-                <b> Especie:</b> {specie}
-              </p>
+              <b> Especie:</b> {specie}
             </div>
             <div>
-              <p>
-                <b> Rol: </b> {role}
-              </p>
+              <b> Rol: </b> {role}
             </div>
           </Card.Text>
-          <Button className="azul" variant="primary">More</Button>
+          <Button className="azul" variant="primary">
+            More Info
+          </Button>
         </Card.Body>
       </Card>
     </div>

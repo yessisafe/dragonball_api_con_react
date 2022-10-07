@@ -28,12 +28,11 @@ const List = () => {
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand>
-              Dragón Ball Super 
+            Dragón Ball Super
             <input className="input" type="text" placeholder="Buscar" />
           </Navbar.Brand>
         </Container>
       </Navbar>
-
 
       <div className="App container ">
         <div className="row">
